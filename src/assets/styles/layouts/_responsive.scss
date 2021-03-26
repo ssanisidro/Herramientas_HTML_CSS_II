@@ -1,0 +1,68 @@
+/*-----------------------------------------------------------------*/
+/*                      RESPONSIVE                                  */
+/*-----------------------------------------------------------------*/
+
+@media only screen and (max-width: 991px) {
+  .container {
+    width: 100%;
+  }
+
+  .header {
+    -ms-transform: translateX(-260px);
+    -webkit-transform: translateX(-260px);
+    transform: translateX(-260px);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .pushed {
+    -ms-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  .main-content {
+    width: 100%;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .main-pushed {
+    -ms-transform: translateX(260px);
+    -webkit-transform: translateX(260px);
+    transform: translateX(260px);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .welcome {
+    padding: 60px !important;
+  }
+  .resume .resume-item {
+    margin-top: 30px !important;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .main-content section {
+    padding: 30px 30px;
+  }
+}
+
+@media only screen and (max-height: 600px) {
+  .header .header__name {
+    margin: 15px 0;
+  }
+
+  .header .header__main-nav ul li {
+    padding-bottom: 10px;
+  }
+
+  .header .header__social-icons {
+    margin: 0 0 15px;
+  }
+}

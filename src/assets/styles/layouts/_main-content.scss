@@ -1,0 +1,38 @@
+/*-----------------------------------------------------------------*/
+/*                      MAIN CONTENT                               */
+/*-----------------------------------------------------------------*/
+
+.main-content {
+  background: $white;
+  width: 740px;
+  p {
+    color: #2c2c2c;
+    font-family: $font-family-cv;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 28px;
+  }
+  section {
+    padding: 30px 70px;
+    position: relative;
+    .about__title {
+      margin-bottom: 40px;
+      position: relative;
+      h2 {
+        color: lighten($cv-corporate, 20%);
+        display: inline-block;
+        font-family: "Poppins", sans-serif;
+        font-size: 17px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        margin: 0;
+        text-transform: uppercase;
+        position: relative;
+      }
+    }
+  }
+}
+.main-content--pull-right,
+.pull-right {
+  float: right !important;
+}

@@ -1,21 +1,50 @@
+/*-----------------------------------------------------------------*/
+/*                      GLOBAL STYLES                              */
+/*-----------------------------------------------------------------*/
 body {
-  margin: 0;
-  padding: 30px;
-  font-family: $font-family-sans-serif;
-  background-color: $uoc-bg;
-  color: $uoc-corporate;
+  color: #1a1a1a;
+  background-color: $cv-bg;
+  font-family: $font-family-cv;
+  overflow-x: hidden;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.uoc-logo {
-  display: block;
-  margin-bottom: 20px;
-  width: 300px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-family-cv;
+}
+
+img {
+  max-width: 100%;
   height: auto;
 }
 
-.uoc-title {
-  font-family: $font-family-serif;
-  font-size: 36px;
-  font-weight: 700;
-  color: $uoc-corporate;
+ul {
+  padding-left: 15px;
+}
+
+li {
+  padding: 0 0 10px;
+}
+
+/*-----------------------------------------------------------------*/
+/*                      LAYOUT                                     */
+/*-----------------------------------------------------------------*/
+.container {
+  width: 1000px;
+  margin: 0 auto;
 }

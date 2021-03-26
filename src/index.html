@@ -1,21 +1,255 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
-  </head>
-  <body>
-    <img src="./assets/images/logo.png" alt="Universitat Oberta de Catalunya" class="uoc-logo">
-    <h1 class="uoc-title"><i class="fas fa-university"></i>Hello, UOC!</h1>
-    <p>
-      This is a starter template for the Advanced HTML and CSS Tools courses
-      from the Master's Program in Multimedia Applications and the Master's
-      Program in Web App and Website Development at the Universitat Oberta de
-      Catalunya.
-    </p>
-    <script src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+  <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800" rel="stylesheet">
+  <title>CV Sergio Sanisidro García</title>
+</head>
+
+<body>
+  <main class="container">
+
+    <header class="header header--pull-left">
+
+      <div class="header__mobile header__mobile--visible">
+        <div id="header__hamburger-menu" class="header__hamburger-menu">
+          <div class="bar"></div>
+        </div>
+      </div>
+
+      <div class="header__avatar">
+        <img src="assets/images/sergiosanisidro.jfif" alt="avatar">
+      </div>
+
+      <div class="header__name">
+        <h1>Sergio Sanisidro</h1>
+        <span>Backend Developer</span>
+      </div>
+
+      <div class="header__social-icons">
+        <ul>
+          <li><a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fab fa-behance" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+
+      <nav class="header__main-nav">
+        <ul class="navigation">
+
+          <li><a href="#about">Sobre mi</a></li>
+          <li><a href="#experience">Experiencia</a></li>
+          <li><a href="#education">Formación</a></li>
+          <li><a href="#testimonials">Recomendaciones</a></li>
+        </ul>
+      </nav>
+
+    </header>
+
+
+    <div class="main-content main-content--pull-right">
+
+
+      <section id="about" class="about">
+
+        <div class="about__title">
+          <h2>Sobre mi</h2>
+        </div>
+        <div class="about__intro">
+
+          <p>Tengo un perfil tecnológico, soy un apasionado del desarrollo y diseño web. Me considero una persona
+            responsable, proactivo y con capacidad de aprendizaje. Disfruto de los retos y del trabajo en equipo. </p>
+
+          <ul class="about__info">
+            <li><span class="about__info--bold">Nacimiento:</span> 6 Septiembre, 1995</li>
+            <li><span class="about__info--bold">Location:</span> Barcelona, España</li>
+            <li><span class="about__info--bold">Email:</span> sergio.sanisidro.95@gmail.com</li>
+            <li><span class="about__info--bold">Teléfono:</span> +34 620 88 20 34</li>
+          </ul>
+
+        </div>
+
+        <div class="about__skills">
+
+          <div class="row">
+
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <div class="skills__info">
+                <h3 class="pull-left">Javascript</h3>
+                <span class="pull-right">90%</span>
+              </div>
+              <div class="progress">
+                <div class="progress__bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"
+                  style="width:90%"></div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <div class="skills__info">
+                <h3 class="pull-left">HTML/CSS</h3>
+                <span class="pull-right">80%</span>
+              </div>
+              <div class="progress">
+                <div class="progress__bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+                  style="width:80%"></div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <div class="skills__info">
+                <h3 class="pull-left">Angular</h3>
+                <span class="pull-right">45%</span>
+              </div>
+              <div class="progress">
+                <div class="progress__bar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"
+                  style="width:45%"></div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <div class="skills__info">
+                <h3 class="pull-left">MongoDB</h3>
+                <span class="pull-right">60%</span>
+              </div>
+              <div class="progress">
+                <div class="progress__bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                  style="width:60%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section">
+
+        <div class="section__title">
+          <h2>Experiencia</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="section__item--top section__item">
+              <h2>ENTHEC SOLUTIONS</h2>
+              <span>Backend Developer | Febrero 2021 - Actualidad</span>
+              <p>Trabajo principalmente con NodeJS y realizando el back de distintas aplicaciones de la empresa. Sector
+                de la ciberseguridad.</p>
+            </div>
+          </div>
+
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="section__item">
+              <h2>DVD DENTAL</h2>
+              <span>Gestión web/ jefe proyecto | Diciembre 2018 - Diciembre 2020</span>
+              <p>Diseño de landings y SEO</p>
+            </div>
+          </div>
+
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="section__item">
+              <h2>VINCUTATO - Marketing & Comunicación</h2>
+              <span>Gestión y diseño web | Noviembre 2017 - Diciembre 2018</span>
+              <p>Diseño de páginas web y campañas de marketing</p>
+            </div>
+          </div>
+
+
+        </div>
+
+      </section>
+
+      <section id="education" class="section">
+
+        <div class="section__title">
+          <h2>Formación</h2>
+
+        </div>
+
+        <div class="row">
+
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="section__item--top section__item">
+              <h2>Máster de desarrollo de sitios y aplicaciones web</h2>
+              <span>Junio 2022</span>
+              <p>Universitat Oberta de Catalunya (UOC)</p>
+            </div>
+          </div>
+
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="section__item">
+              <h2>Máster marketing digital y gestión comercial</h2>
+              <span>Junio 2018</span>
+              <p>Universidad de Santiago de Compostela</p>
+            </div>
+          </div>
+
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="section__item">
+              <h2>Grado en administración y dirección de empresas</h2>
+              <span>Junio 2017</span>
+              <p>Universidad de Santiago de Compostela</p>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+      <section id="testimonials" class="testimonials">
+
+        <div class="section__title">
+          <h2>Recomendaciones</h2>
+        </div>
+
+        <div class="testimonial">
+          <div class="row">
+            <div class="col-md-2 col-sm-2 hidden-xs">
+              <div class="testimonial__img">
+                <img src="assets/images/teresamora.jfif" alt="testimonial-customer">
+              </div>
+            </div>
+            <div class="testimonial__text col-md-10 col-sm-10 col-xs-12">
+              <p>He tenido la oportunidad de trabajar con Sergio durante dos años en los cuáles no tuve que ejercer la
+                función de "responsable" con él porque una de sus características principales es esa, su
+                responsabilidad con el trabajo y su compromiso con la calidad en el mismo. Trabajar con él fue algo
+                tremendamente positivo y aprendí mucho, tanto de su actitud como de su manera de ver el mundo. Es un
+                excelente compañero, además de alguien con una curiosidad innata lo que le lleva a estar en un
+                continuo aprendizaje de forma natural. Desde luego es alguien a quién tendría en mi equipo sin
+                dudarlo.</p>
+              <span class="testimonial__author">- Teresa Mora -</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <div class="row">
+            <div class="col-md-2 col-sm-2 hidden-xs">
+              <div class="testimonial__img">
+                <img src="assets/images/teresaiglesias.jfif" alt="testimonial-customer">
+              </div>
+            </div>
+            <div class="testimonial__text col-md-10 col-sm-10 col-xs-12">
+              <p>Sergio empezó en nuestra agencia de marketing como alumno en prácticas del Máster de Marketing
+                Digital y Gestión Comercial de la USC, tras una preselección en la que mis compañeros y yo ya pudimos
+                observar su proactividad y su buena predisposición hacia el trabajo y el aprendizaje.
+                Después de cuatro meses en prácticas con nosotros, decidimos que se ajustaba al 100% al perfil de
+                persona y profesional que estábamos buscando para ampliar nuestra agencia y decidimos proponerle que
+                se incorporara al equipo. Además de ser noble, alegre, justo y sensato, como profesional es
+                detallista, multidisciplinar, creativo y cumplidor.
+                En definitiva, consideramos que ha sido un gran fichaje</p>
+              <span class="testimonial__author">- Teresa Iglesias -</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </main>
+  <script src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+</body>
+
 </html>

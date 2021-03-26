@@ -14,7 +14,7 @@
  * see: https://v2.parceljs.org/features/module-resolution/
  * see commented examples below
  */
- @import "@fortawesome/fontawesome-free/css/all.css";
+@import "@fortawesome/fontawesome-free/css/all.css";
 // @import "some-node-module";
 // @import "@some-company/some-node-module";
 
@@ -24,6 +24,10 @@
  */
 
 @import "layouts/home";
+@import "layouts/header";
+@import "layouts/main-content";
+@import "layouts/sections";
+@import "layouts/responsive";
 
 /**
  * Do NOT include anything else in this file!
